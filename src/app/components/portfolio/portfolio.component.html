@@ -1,0 +1,310 @@
+<section id="portfolio" class="portfolio section-bg">
+  
+    <div class="">
+
+
+
+      <div class="" data-aos="fade-up" data-aos-delay="800" data-aos-duration="2000">
+          
+        <div class="section-title container">
+          <h2>Портфолио</h2>
+       
+
+        </div>
+  
+        <div class="row w-100">
+          <div class="col-lg-12 container pe-0">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter" (click)="setActive()" [class.filterActive]="bool"   #all>Все</li>
+              <li data-filter="filter-app" class="filter-app" [class.filterActive]="bool1" (click)="setActive2()" #mobile>Mobile App</li>
+              <!--              <li data-filter=".filter-card">Card</li>-->
+              <li data-filter="filter-web" class="filter-web" [class.filterActive]="bool2" (click)="setActive3()" #web>Web App</li>
+            </ul>
+          </div>
+        </div>
+  
+        
+  <div class="black-wrap" id="blWrap" (click)="close(numcop)">
+  
+        
+  </div>
+  
+        <div class="container "  [ngSwitch]="val">
+  
+          <div class="row">
+            <ng-template ngSwitchCase="Mobile App">
+              <div class="col-lg-4 col-md-6 portfolio-item filter-app mt-3"  >
+                <div class="portfolio-wrap" >
+                  <img src="assets/img/portfolio/portfolio-1.jpg"  class="img-fluids" alt="">
+                  <div class="portfolio-info" >
+                    <h4>Zumda</h4>
+                    <p>
+                      Zumda
+                      ZUMDA - ПРОГРАММНЫЙ КОМПЛЕКС ДЛЯ АВТОМАТИЗАЦИИ БИЗНЕСА ТАКСИ И ТАКСОПАРКОВ, КУРЬЕРСКИХ СЛУЖБ ДОСТАВКИ
+                      ИННОВАЦИОННЫЕ ТЕХНОЛОГИИ ВЕДЕНИЯ БИЗНЕСА</p>
+                    <div class="portfolio-links" >
+                      <a  data-galleryery="portfolioGallery" (click)="scaleb(0)"
+                        class="portfolio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
+                      <a [routerLink]="['work', this.data[0]._id]"  class="portfolio-lightbox" title="More Details"><i class="bi bi-link"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+    
+            <ng-template ngSwitchCase="Web App">
+              <div class="col-lg-4 col-md-6 portfolio-item filter-web mt-3" >
+                <div class="portfolio-wrap" >
+                  <img src="assets/img/portfolio/portfolio-2.jpg"  class="img-fluids" alt="">
+                  <div class="portfolio-info">
+                    <h4>Asotir</h4>
+                    <p>ПРЕДПРИНИМАТЕЛИ НА ПЛАТФОРМЕ ASOTIR САМОСТОЯТЕЛЬНО СОЗДАЮТ ИНТЕРНЕТ-МАГАЗИНЫ ИЛИ РАЗМЕЩАЮТ СВОИ
+                      ТОВАРЫ В ОБЩЕМ КАТАЛОГЕ</p>
+                    <div class="portfolio-links">
+                      <a title="App 2" data-galleryery="portfolioGallery" (click)="scaleb(1)"
+                        class="portfolio-lightbox"><i class="bi bi-plus"></i></a>
+                      <a [routerLink]="['work', this.data[1]._id]" class="portfolio-lightbox" title="More Details"><i class="bi bi-link"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+    
+            <ng-template ngSwitchCase="Mobile App">
+              <div class="col-lg-4 col-md-6 portfolio-item filter-app mt-3" >
+                <div class="portfolio-wrap">
+                  <img src="assets/img/portfolio/portfolio-3.jpg"  class="img-fluids" alt="">
+                  <div class="portfolio-info p-info3">
+                    <h4>Zummarket</h4>
+                    <p>ПРЕДПРИНИМАТЕЛИ НА ПЛАТФОРМЕ ZUMMARKET САМОСТОЯТЕЛЬНО СОЗДАЮТ ИНТЕРНЕТ-МАГАЗИНЫ ИЛИ РАЗМЕЩАЮТ СВОИ
+                      ТОВАРЫ В ОБЩЕМ КАТАЛОГЕ.</p>
+                    <div class="portfolio-links">
+                      <a  data-galleryery="portfolioGallery" title="App 3"(click)="scaleb(2)"
+                        class="portfolio-lightbox" title="App 2"><i class="bi bi-plus"></i></a>
+                      <a [routerLink]="['work', this.data[2]._id]" class="portfolio-lightbox" title="More Details"><i class="bi bi-link"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+    
+            <!--          <div class="col-lg-4 col-md-6 portfolio-item filter-card">-->
+            <!--            <div class="portfolio-wrap">-->
+            <!--              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">-->
+            <!--              <div class="portfolio-info">-->
+            <!--                <h4>Card 2</h4>-->
+            <!--                <p>Card</p>-->
+            <!--                <div class="portfolio-links">-->
+            <!--                  <a href="assets/img/portfolio/portfolio-4.jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bi bi-plus"></i></a>-->
+            <!--                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>-->
+            <!--                </div>-->
+            <!--              </div>-->
+            <!--            </div>-->
+            <!--          </div>-->
+    
+            <ng-template ngSwitchCase="Web App">
+              <div class="col-lg-4 col-md-6 portfolio-item filter-web mt-3">
+                <div class="portfolio-wrap">
+                  <img src="assets/img/portfolio/portfolio-5.jpg"  class="img-fluids" alt="">
+                  <div class="portfolio-info">
+                    <h4>Web 2</h4>
+                    <p>Web</p>
+                    <div class="portfolio-links">
+                      <a  data-galleryery="portfolioGallery" title="App 5" (click)="scaleb(3)"
+                        class="portfolio-lightbox"><i class="bi bi-plus"></i></a>
+                      <a [routerLink]="['work', this.data[3]._id]" class="portfolio-lightbox" title="More Details"><i class="bi bi-link"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+    
+    
+            <ng-template ngSwitchCase="Mobile App">
+              <div class="col-lg-4 col-md-6 portfolio-item filter-app mt-3">
+                <div class="portfolio-wrap">
+                  <img src="assets/img/portfolio/portfolio-6.jpg"  class="img-fluids" alt="">
+                  <div class="portfolio-info">
+                    <h4>App 3</h4>
+                    <p>App</p>
+                    <div class="portfolio-links">
+                      <a  data-galleryery="portfolioGallery" title="App 6" (click)="scaleb(4)"
+                        class="portfolio-lightbox"><i class="bi bi-plus"></i></a>
+                      <a [routerLink]="['work', this.data[4]._id]" class="portfolio-lightbox" title="More Details"><i class="bi bi-link"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+    
+    
+            <ng-template ngSwitchCase="Web App">
+              <div class="col-lg-4 col-md-6 portfolio-item  filter-web mt-3">
+                <div class="portfolio-wrap">
+                  <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluids" alt="">
+                  <div class="portfolio-info">
+                    <h4>Web 3</h4>
+                    <p>Web</p>
+                    <div class="portfolio-links">
+                      <a  class="portfolio-lightbox" title="App 9" (click)="scaleb(5)"><i
+                          class="bi bi-plus"></i></a>
+                      <a [routerLink]="['work', this.data[5]._id]" class="portfolio-lightbox" title="More Details"><i class="bi bi-link"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+    
+    
+    
+    
+            <ng-template ngSwitchDefault="Все">
+            
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app mt-3">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/portfolio-1.jpg"  class="img-fluids" alt="">
+                    <div class="portfolio-info">
+                      <h4>Zumda</h4>
+                      <p>
+                        Zumda
+                        ZUMDA - ПРОГРАММНЫЙ КОМПЛЕКС ДЛЯ АВТОМАТИЗАЦИИ БИЗНЕСА ТАКСИ И ТАКСОПАРКОВ, КУРЬЕРСКИХ СЛУЖБ ДОСТАВКИ
+                        ИННОВАЦИОННЫЕ ТЕХНОЛОГИИ ВЕДЕНИЯ БИЗНЕСА</p>
+                      <div class="portfolio-links">
+                        <a  data-galleryery="portfolioGallery" (click)="scaleb(0)"
+                          class="portfolio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
+                        <a [routerLink]="['work', this.data[0]._id]"  class="portfolio-lightbox" title="More Details"><i class="bi bi-link"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+      
+             
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web mt-3">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/portfolio-2.jpg"  class="img-fluids" alt="">
+                    <div class="portfolio-info">
+                      <h4>Asotir</h4>
+                      <p>ПРЕДПРИНИМАТЕЛИ НА ПЛАТФОРМЕ ASOTIR САМОСТОЯТЕЛЬНО СОЗДАЮТ ИНТЕРНЕТ-МАГАЗИНЫ ИЛИ РАЗМЕЩАЮТ СВОИ
+                        ТОВАРЫ В ОБЩЕМ КАТАЛОГЕ</p>
+                      <div class="portfolio-links">
+                        <a  title="App 2" data-galleryery="portfolioGallery" (click)="scaleb(1)"
+                          class="portfolio-lightbox"><i class="bi bi-plus"></i></a>
+                        <a [routerLink]="['work', this.data[1]._id]" class="portfolio-lightbox" title="More Details"><i class="bi bi-link"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+             
+      
+             
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app mt-3">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/portfolio-3.jpg"  class="img-fluids" alt="">
+                    <div class="portfolio-info">
+                      <h4>Zummarket</h4>
+                      <p>ПРЕДПРИНИМАТЕЛИ НА ПЛАТФОРМЕ ZUMMARKET САМОСТОЯТЕЛЬНО СОЗДАЮТ ИНТЕРНЕТ-МАГАЗИНЫ ИЛИ РАЗМЕЩАЮТ СВОИ
+                        ТОВАРЫ В ОБЩЕМ КАТАЛОГЕ.</p>
+                      <div class="portfolio-links">
+                        <a  data-galleryery="portfolioGallery" title="App 3" (click)="scaleb(2)"
+                          class="portfolio-lightbox" title="App 2"><i class="bi bi-plus"></i></a>
+                        <a [routerLink]="['work', this.data[2]._id]" class="portfolio-lightbox" title="More Details"><i class="bi bi-link"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+      
+              <!--          <div class="col-lg-4 col-md-6 portfolio-item filter-card">-->
+              <!--            <div class="portfolio-wrap">-->
+              <!--              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">-->
+              <!--              <div class="portfolio-info">-->
+              <!--                <h4>Card 2</h4>-->
+              <!--                <p>Card</p>-->
+              <!--                <div class="portfolio-links">-->
+              <!--                  <a href="assets/img/portfolio/portfolio-4.jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bi bi-plus"></i></a>-->
+              <!--                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>-->
+              <!--                </div>-->
+              <!--              </div>-->
+              <!--            </div>-->
+              <!--          </div>-->
+      
+            
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web mt-3">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/portfolio-5.jpg"  class="img-fluids" alt="">
+                    <div class="portfolio-info">
+                      <h4>Web 2</h4>
+                      <p>Web</p>
+                      <div class="portfolio-links">
+                        <a  data-galleryery="portfolioGallery" title="App 5" (click)="scaleb(3)"
+                          class="portfolio-lightbox"><i class="bi bi-plus"></i></a>
+                        <a [routerLink]="['work', this.data[3]._id]" class="portfolio-lightbox" title="More Details"><i class="bi bi-link"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+             
+      
+      
+    
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app mt-3">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/portfolio-6.jpg"  class="img-fluids" alt="">
+                    <div class="portfolio-info">
+                      <h4>App 3</h4>
+                      <p>App</p>
+                      <div class="portfolio-links">
+                        <a  data-galleryery="portfolioGallery" title="App 6" (click)="scaleb(4)"
+                          class="portfolio-lightbox"><i class="bi bi-plus"></i></a>
+                        <a [routerLink]="['work', this.data[4]._id]" class="portfolio-lightbox" title="More Details"><i class="bi bi-link"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+           
+      
+      
+            
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web mt-3">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluids" alt="">
+                    <div class="portfolio-info">
+                      <h4>Web 3</h4>
+                      <p>Web</p>
+                      <div class="portfolio-links">
+                        <a  class="portfolio-lightbox" title="App 9" (click)="scaleb(5)"><i
+                            class="bi bi-plus"></i></a>
+                        <a [routerLink]="['work', this.data[5]._id]" class="portfolio-lightbox" title="More Details"><i class="bi bi-link"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+            </ng-template>
+    
+          </div>
+        </div>
+  
+  
+  
+  
+  
+  
+  
+  
+        
+         
+       
+  
+      </div>
+
+
+
+
+
+    </div>
+    
+    
+  </section>
+

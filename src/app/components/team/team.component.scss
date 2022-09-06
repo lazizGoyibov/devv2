@@ -1,0 +1,158 @@
+.team{
+    margin-top: 120px;
+    margin-bottom: 150px;
+}
+
+
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    color: #5c768d;
+    text-align: center
+}
+
+
+
+.section-title p {
+    box-sizing: border-box;
+    color: rgb(68, 68, 68);
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center
+}
+
+.team {
+    
+    .member {
+        position: relative;
+        transition: all ease .5s;
+
+
+        .pic {
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            box-sizing: border-box;
+            color: rgb(68, 68, 68);
+            font-family: "Open Sans", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            text-align: center
+        }
+        img {
+            box-sizing: border-box;
+            color: rgb(68, 68, 68);
+            font-family: "Open Sans", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            height: 290px;
+            line-height: 24px;
+            max-width: 100%;
+            text-align: center;
+            transition: all ease .5s;
+            object-fit: cover;
+        }
+
+
+        .member-info {
+            position: absolute;
+            bottom: -48px;
+            left: 20px;
+            right: 20px;
+            background: linear-gradient(360deg, #5c768d 0%, rgba(92, 118, 141, 0.9) 35%, rgba(140, 167, 191, 0.8) 100%);
+            padding: 15px 0;
+            border-radius: 4px;
+        }
+
+        h4 {
+            box-sizing: border-box;
+            color: rgb(255, 255, 255);
+            font-family: "Raleway", sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 19.2px;
+            margin-bottom: 10px;
+            margin-top: 0px;
+           
+            padding-bottom: 10px;
+            position: relative;
+            text-align: center;
+        }
+
+        span {
+            box-sizing: border-box;
+            color: rgb(255, 255, 255);
+            display: block;
+            font-family: "Open Sans", sans-serif;
+            font-size: 13px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 19.5px;
+            text-align: center
+        }
+
+
+        .social {
+
+            text-align: center;
+            margin-top: 15px;
+            a {
+                transition: color 0.3s;
+                color: #fff;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+
+            a:last-child {
+          
+          
+                margin-right: 0px;
+            }
+            
+            a:first-child {
+          
+          
+                margin-left: 0px;
+            }
+            
+            i {
+                box-sizing: border-box;
+                color: rgb(245, 245, 245);
+                font-family: "Open Sans", sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                margin-bottom: 0px;
+                
+                margin-top: 0px;
+                text-align: center;
+            }
+
+
+        }
+    }
+}
+
+.member:hover img {
+    transform: scale(1.1);
+}
+
+.team-bottom {
+    margin-top: 88px;
+}
+
+.wrapper {
+    margin-top: 88px;
+}
+

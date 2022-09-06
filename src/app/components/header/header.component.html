@@ -1,0 +1,32 @@
+<div class="header d-flex align-items-center" id="header">
+    <div class="header-inner pt-1 pb-1 container d-flex align-items-center justify-content-center justify-content-md-between pt-2 pb-2">
+     <div class="header-left  d-flex justify-content-center justify-content-md-between">
+         <a routerLink=""  >
+            <img src="../../../assets/logo.png" alt="" class="head-logo">
+         </a>
+     </div>
+ 
+     <div class="header-right  d-flex justify-content-center justify-content-md-between">
+         <a [class.active]="status"href="#section1" class="menu-links">
+            Главная
+         </a>
+         <a [class.active]="status2" href="#about" class="menu-links">
+            О нас
+         </a>
+         <a [class.active]="status3" href="#services" class="menu-links">
+            Услуги
+         </a>
+         <a [class.active]="status4" href="#portfolio" class="menu-links">
+            Портфолио
+         </a>
+         <a [class.active]="status5" href="#team" class="menu-links">
+            Наша команда
+         </a>
+        
+         <a [class.active]="status6" href="#contact" class="menu-links">
+            Контакты
+         </a>
+     </div>
+    </div>
+ </div>
+ 

@@ -25,12 +25,28 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+
+              {
+                "glob": "*.svg",
+                "input": "./node_modules/bootstrap-icons/icons/",
+                "output": "/assets/img/"
+              }
             ],
             "styles": [
+              
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/animate.css/animate.min.css",
+              "node_modules/aos/dist/aos.css",
               "src/styles.scss"
+              
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/aos/dist/aos.js",
+              "node_modules/aos/src/js/aos.js"
+              
+            ]
           },
           "configurations": {
             "production": {

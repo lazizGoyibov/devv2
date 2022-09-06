@@ -1,0 +1,40 @@
+.about {
+    box-shadow: 0 5px 25px 0 rgba(214, 215, 216, 0.6);
+    margin-top: 150px;
+
+    .about-inner {
+        padding: 50px;
+    }
+}
+
+.section-title {
+    h2 {
+        box-sizing: border-box;
+        color: rgb(68, 68, 68);
+        font-family: "Raleway", sans-serif;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 33.6px;
+        text-align: center
+    }
+
+    p {
+            box-sizing: border-box;
+            color: rgb(102, 102, 102);
+            font-family: "Open Sans", sans-serif;
+            font-size: 16px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 24px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            text-align: left
+    }
+}
+
+.img-fluid1
+{
+    height: 100%;
+    object-fit: cover;
+    width: 415px;
+}
